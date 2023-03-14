@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Dom, significa document objetc model</h1>
+    <p>Podemos buscar <em>informações</em> no documento por...</p>
+    <p>Marca // id // nome // classe // seletor</p>
+    <p>Marca : GetElementsByTagName()</p>
+    <p>ID : GetElementsById()</p>
+    <p>Nome : GetElementsByName</p>
+    <p>Classe : GetElementsByClassName</p>
+    <p>Seletor : QuerySelector() // QuerySelectorAll</p>
+    
+    <Div id = 'msg'> Testes 1</Div>
+    <div name = "123">Teste 2</div>
+    <div class=" terceira">Teste 3</div>
+    <h2>Começando os testes...</h2>
+
+    <Script>
+        /*
+        document.write(window.document.charset) 
+        window.document.write("</br>")
+        document.write(window.navigator.appName)
+        window.document.write("</br>")
+        document.write(window.document.URL)
+        */
+
+       /*
+       var corpo = window.document.body
+       corpo.style.background = 'blue'
+       */
+
+       let p1 = window.document.getElementsByTagName('p')[0]
+       window.document.write('</br>')
+       window.document.write("Está escrito assim no p1:" + p1.innerText) // apenas o texto
+       document.write('</br>')
+       window.document.write("Está escrito assim no p1:" + p1.innerHTML) // no HTML
+       document.write('</br>')
+
+       let g = window.document.getElementById('msg')
+       g.style.color = 'white'
+       g.style.background = 'black'
+       g.innerText = "mudei o nome"
+       document.write(g.innerHTML)
+       document.write('</br>')
+
+       let h = window.document. getElementsByName('123')[0]
+       document.write(h.innerText)
+       h.style.color = 'green'
+       document.write('</br>')
+
+       let d = window.document.querySelector('div#msg') // quando é ID usa "#" 
+       document.write(d.innerHTML)
+
+
+
+    </Script>
+</body>
+</html>
