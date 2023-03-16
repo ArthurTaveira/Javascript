@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando LOVE</title>
+    <style>
+
+        :root {
+
+            --cor1:#F2F2F2;
+            --cor2:#F2A7BB;
+            --cor2:#590E22;
+            --cor4:#D9043D;
+            --cor5:#D9042B;
+        }
+
+        * {
+            margin: 0;
+            
+        }
+        body {
+            background-color: #F2A7BB;
+            text-indent: 10px;
+            height: 100%;
+        }
+
+        header {
+            background-color: var(--cor4);
+            color: wheat;
+            text-align: center;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.315);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main {
+        
+            max-width: 800px;
+            background-color: white;
+            margin: 0 auto;
+            height: 500px;
+            padding: 30px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+            margin-bottom: 50px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            padding-top: 50px;
+        }
+
+        input {
+            margin-top: 50px;
+            width: 150px;
+            height: 35px;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div {
+            margin-top: 50px;
+        }
+
+        img {
+            display: block;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora do L.O.V.E </h1>
+        
+    </header>
+    <main>
+        <aside>
+            <p>Abaixo, coloque a quantidade de <strong>amor</strong> presente no relacionamento e clique no botão para obter seu resultado e descubra se o <strong>amor é grande</strong> :)</p> <br>
+            <p>Ps: essa calculadora serve apenas para Ágata e Arthur</p>
+            <input type="number" name="txtn1" id="txtn1"> -
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Resultado" onclick="clicar()">
+            <strong>
+                <div id="resultado">Resultado:</div>
+            </strong>
+        </aside>
+
+        <img src="384f60105484921.Y3JvcCwxOTczLDE1NDMsMjY4LDU5MA.jpg" alt="love">
+
+        
+    </main>
+    <script>
+        var resultado = document.getElementById("resultado")
+        
+
+        function clicar() {
+            var res = document.getElementById("resultado")
+            res.innerHTML = "O amor da gente é INFINITO gatinha &lt3 &lt3 &lt3 I love u :)"
+        } 
+    </script>
+</body>
+</html>

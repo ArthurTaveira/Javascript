@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substraindo Números</title>
+</head>
+<body>
+    <header>
+        <h1>Subtraindo Números</h1>
+    </header>
+    <main>
+    
+        <input type="number" name="txtn1" id="txtn1"> -
+        <input type="number" name="txtn2" id="txtn2"> <br>
+        <input type="button" value="substrair" onclick="clicar()">
+        <div id="resultado">Resultado</div>
+
+        
+    </main>
+    <script>
+        var resultado = document.getElementById("resultado")
+        
+
+        function clicar() {
+            var txtn1 = document.querySelector("input#txtn1")
+            var txtn2 = document.querySelector('input#txtn2')
+            var res = document.querySelector('div#resultado')
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var resposta = n1 - n2
+            res.innerHTML = resposta
+            
+
+        } 
+    </script>
+</body>
+</html>
