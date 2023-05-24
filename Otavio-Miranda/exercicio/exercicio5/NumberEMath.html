@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+</head>
+<body>
+
+    <h1>Seu número é <span id="numero-titulo">0</span></h1>
+    <div id="texto">...</div>
+    <script>
+
+        let num = window.prompt("Digite um número!");
+        num = Number(num)
+        let NumeroTitulo = document.getElementById
+        ("numero-titulo");
+        let texto = document.getElementById("texto");
+
+        NumeroTitulo.innerHTML = num
+
+        texto.innerHTML = ' '
+        texto.innerHTML += ` <p>Raiz quadrada é ${num ** (1/2)} </p> `
+        texto.innerHTML += ` <p> ${num} é inteiro? ${Number.isInteger(num)} </p>`
+        texto.innerHTML += ` <p> É NaN ? ${Number.isNaN(num)} </p> `
+        texto.innerHTML += ` <p> Arredondando para baixo: ${Math.floor(num)} </p> `
+        texto.innerHTML += ` <p>  Arredondando para cima: ${Math.ceil(num)} </p> `
+        texto.innerHTML += ` <p> Com duas casas decimais: ${num.toFixed(2)} </p> `
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nome = window.prompt("Digite seu nome")
+
+        document.write(`Seu nome é: ${nome} </br>`) 
+
+        document.write(`Seu nome tem ${nome.length} letras </br>`)
+
+        document.write(`A segunda letra do seu nome é: ${nome.charAt(1)} </br>`)
+
+        document.write(`Qual o primeiro índice da letra t no seu nome? ${nome.indexOf("t")} </br>`)
+
+        document.write(`Qual é o último índice da letra r no seu nome? ${nome.lastIndexOf("r")} </br>`)
+
+        document.write(`As ultimas 3 letras do seu nome são: ${nome.slice(-3)} </br>`)
+
+        document.write(`As palavras do seu nome são: ${nome.split(' ')}</br>`)
+
+        document.write(`Seu nome com letras maiúsculas: ${nome.toUpperCase()} </br>`)
+        
+        document.write(`Seu nome com letras minúsculas: ${nome.toLowerCase()} </br>`)
+        
+    </script>
+    
+</body>
+</html>

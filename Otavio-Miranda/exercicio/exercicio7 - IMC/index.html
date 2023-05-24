@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC - Cálculo</title>
+</head>
+<body>
+    <main >
+        <h1 class="titulo">Tabela de IMC</h1>
+        <div class="tabela">
+            <div class="listas">
+                <ul>
+                    <strong>
+                        <li>IMC</li>
+                    </strong>
+                    <li>Menos do que 18,5</li>
+                    <li>Entre 18,5 e 24,9</li>
+                    <li>Entre 25 e 29,9</li>
+                    <li>Entre 30 e 34,9</li>
+                    <li>Entre 35 e 39,9</li>
+                    <li>Acima de 40</li>
+                </ul>
+
+                <ul class="lista2">
+                    <li><strong>Resultado</strong></li>
+                    <li>Abaixo do Peso</li>
+                    <li>Peso Normal</li>
+                    <li>Sobrepeso</li>
+                    <li>Obseidade grau 1</li>
+                    <li>Obsedidade grau 2</li>
+                    <li>Obsedidade grau 3</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div id="form">
+
+            <form action="/" id="formulario">
+                <label for="peso">Peso: </label>
+                <input type="text" name="peso" id="peso">
+
+                <label for="altura">Altura: </label>
+                <input type="text" name="altura" id="altura">
+
+                <button id="enviar">Enviar</button>
+            </form>
+
+            <div id="res">
+
+            </div>
+
+        </div>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
