@@ -43,12 +43,10 @@ function salvarTarefas () {
     const tarefasJSON = JSON.stringify(ListaDeTarefas)
     localStorage.setItem('tarefas', tarefasJSON)
 
-    
 } 
 
-
 function adicionaTarefasSalvas() {
-    //if (!localStorage.getItem('tarefas')) return;
+    if (!localStorage.getItem('tarefas')) return;
     const tarefas= localStorage.getItem('tarefas');
     const ListaDeTarefas = JSON.parse(tarefas)
 
@@ -56,10 +54,6 @@ function adicionaTarefasSalvas() {
         criaTarefa(tarefa)
     }
 }
-
-
-
-
 
 btnTarefa.addEventListener('click', function(e){
     if (!inputTarefa.value) return window.alert('[ERRO] nenhuma nova tarefa detectada !!');
@@ -76,7 +70,7 @@ inputTarefa.addEventListener('keypress', function(e){
 
 document.addEventListener('click', function(e) {
     const el = e.target;
-    if (el.classList.contains( 'apagar')); {
+    if (el.classList.contains("apagar")) {
     el.parentElement.remove();
     salvarTarefas();
     }

@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: rgb(165, 89, 54);
+    background-color: rgb(122, 219, 87);
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -42,10 +42,10 @@ main {
 }
 
 .btn-eq {
-    background-color: rgb(192, 159, 116);
+    background-color: rgb(122, 219, 87);
 }
 
 .btn-eq:hover {
-    background-color: rgb(165, 89, 54);
+    background-color: rgb(82, 150, 58);
 }
 
