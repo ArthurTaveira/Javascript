@@ -14,8 +14,12 @@ body {
   padding: 0;
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
+  font-size: 2rem;
   line-height: 1.5em;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 .container {
@@ -24,35 +28,53 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
+.input-tarefa {
+  height: 40px;
   border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
+  border: 1.5px solid #acaaaa;
+  font-size: 1.5rem;
+  padding: 15px 0px;
+  border-radius: 5px;
+  min-width: 200px;
+  
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
+.btn-tarefa {
+  height: 40px;
+  background-color: rgb(17, 86, 102);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 10px 15px 10px;
+
 }
+
+.btn-tarefa:hover {
+  background-color: rgb(30, 127, 149);
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.tarefas {
+  list-style: none;
+}
+
+.apagar {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  margin-left: 50px;
+}
+
+/*tentar colocar algum input para definir o backgroudcolor
+
+

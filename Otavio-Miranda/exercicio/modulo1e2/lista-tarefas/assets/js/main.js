@@ -7,6 +7,11 @@ function criaLi() {
   return li;
 }
 
+function criaImg() {
+  const img = document.createElement('img');
+  return img;
+}
+
 inputTarefa.addEventListener('keypress', function(e) {
   if (e.keyCode === 13) {
     if (!inputTarefa.value) return;
@@ -21,10 +26,11 @@ function limpaInput() {
 
 function criaBotaoApagar(li) {
   li.innerText += ' ';
-  const botaoApagar = document.createElement('button');
-  botaoApagar.innerText = 'Apagar';
-  // botaoApagar.classList.add('apagar');
-  botaoApagar.setAttribute('class', 'apagar');
+  const botaoApagar = document.createElement('img')
+  //document.createElement('button');
+  botaoApagar.innerText = '';
+  botaoApagar.classList.add('apagar');
+  botaoApagar.setAttribute('src', 'lixo.png');
   botaoApagar.setAttribute('title', 'Apagar esta tarefa');
   li.appendChild(botaoApagar);
 }
@@ -37,6 +43,8 @@ function criaTarefa(textoInput) {
   criaBotaoApagar(li);
   salvarTarefas();
 }
+
+
 
 btnTarefa.addEventListener('click', function() {
   if (!inputTarefa.value) return;
