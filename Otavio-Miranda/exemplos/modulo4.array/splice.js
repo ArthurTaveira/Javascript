@@ -20,7 +20,7 @@ console.log("4)", nomes, removidos)
 
 //push
 
-nomes.splice(nomes.length, 1, 'push')
+nomes.splice (nomes.length, 'push')
 console.log("5)",nomes)
 
 // unshift
