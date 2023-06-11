@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+
+  /*
+  amerelo pastel: #dfd880
+  laranja pastel: #f67828
+  cinza pastel : cfcfc4
+
+  */
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /*background-image: linear-gradient(-210deg, #b7ffa9cb , #318d1fcb);*/
+  /*background: var(--primary-color);*/
+  background-image: linear-gradient(45deg, #dfd880 , #e4d830);
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.5em;
+  
+}
+
+.cabeça {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 0;
+  color: black;
+}
+
+.informa {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  
+}
+.hora, .dia, .semana {
+  
+  padding: 5px;
+  border-radius: 10px ;
+  font-size: 0.9em;
+  background: #dfd880;
+  font-family: sans-serif
+}
+
+h1 {
+  font-size: 2rem;
+  font-family:'Merriweather Sans', sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input-tarefa {
+  height: 40px;
+  border: none;
+  border: 1.5px solid #acaaaa;
+  font-size: 1.5rem;
+  padding: 15px 0px;
+  border-radius: 5px;
+  min-width: 200px;
+  
+}
+
+.btn-tarefa {
+  height: 40px;
+  background-color: rgb(17, 86, 102);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 10px 15px 10px;
+
+}
+
+.btn-tarefa:hover {
+  background-color: rgb(30, 127, 149);
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.tarefas {
+  list-style: none;
+  padding: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 0px;
+  
+  
+
+
+}
+
+li {
+  
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(45deg, #dfd880 , #e4d830);
+  
+  width: 100%;
+  font-size: 1em;
+}
+
+.apagar {
+
+  font-size: 1rem;
+  pad: 10px 15px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  font-style: bold;
+  
+}
+
+.apagar:hover{
+  box-shadow: -2px 2px 0px black;
+  padding: 5px 10px;
+  font-style: bold;
+  background-color: red;
+}
+
+.remover{
+  background-color: red;
+  color: white;
+}
+
+/*tentar colocar algum input para definir o backgroudcolor*/
+
+
+
+
+
+

@@ -47,7 +47,7 @@ console.log("######")
 //desestruturação de objetos
 
 function funcao5 ({valor1, valor2, valor3}) {
-    console.log(valor1, valor2, valor3, arguments)
+    console.log(valor1, valor2, valor3)
 }
 
 funcao5 ({valor1: 'Agata', valor2:"arthur", valor3: "yoh", valor4: 'isra'})
