@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: rgb(211, 210, 210);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+   
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap ;
+    width: 90%;
+    
+    margin: auto;
+    align-items: center;
+}
+
+input {
+    height: 80px;
+    font-size: 1.5rem;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.add {
+    width: 20%;
+    height: 80px;
+    cursor: pointer;
+    background-color: rgb(129, 187, 129);
+    border: none;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto auto;
+    padding-top: 40px;
+    width: 90%;
+}
+
+div.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px black;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.item.clicado{
+    background-color: rgb(233, 231, 231);
+
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone {
+    flex: 20%;
+     text-align: center;
+     font-size: 2rem;
+}
+
+.item-nome {
+    flex: 55%;
+     text-align: center;
+     font-size: 2rem;
+     
+}
+
+.item-botao {
+    flex: 25%;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    height: 80px;
+    width: 100%;
+}
+
+.mdi-check-circle {
+    color: green;
+}
